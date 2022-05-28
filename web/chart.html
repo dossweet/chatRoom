@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聊天室</title>
+    <link rel="stylesheet" type="text/css" href="chart.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/socket.io/4.1.3/socket.io.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap chartShow">
+        <div class="left">
+            <h3>好好学习</h3>
+            <div class="firends-list">
+                <div class="firends-item">
+                    A
+                </div>
+                <div class="firends-item">
+                    B
+                </div>
+                <div class="firends-item">
+                    C
+                </div>
+                <div class="firends-item">
+                    D
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <p class="right-user">sweet</p>
+            <div class="msg-wrap">
+                <div class="msg-wrap-item" id="msg-wrap-item">
+                    <div class="msg-list">
+                        <img src="https://cdn.jsdelivr.net/gh/doublesweet01/BS_script@master/image/sweet.jpg">
+                        <div>
+                            <div class="firends-name">sweet</div>
+                            <div class="other-context">你好，很高兴认识你！你好，很高兴认识你！你好，很高兴认识你！你好，很高兴认识你！</div>
+                        </div>
+                    </div>
+                    <div class="msg-list msg-list-right">
+                        <img src="https://cdn.jsdelivr.net/gh/doublesweet01/BS_script@master/image/sweet.jpg">
+                        <div>
+                            <div class="my-name">sweet</div>
+                            <div class="my-context">你好，很高兴认识你！</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-msg">查看历史消息</div>
+            </div>
+            <div class="input-wrap">
+                <input class="input" id="input">
+                <button id="msg-button">发送</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="chart.js"></script>
+</body>
+
+</html>

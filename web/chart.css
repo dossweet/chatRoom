@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+* {
+    outline: none;
+}
+
+.wrap {
+    display: flex;
+    height: 100%;
+}
+
+.left {
+    background-color: #252526;
+    width: 100px;
+}
+
+.firends-item {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    /* border-bottom: 1px solid #cccccc; */
+}
+
+.firends-item:hover {
+    color: #007acc;
+}
+
+.right {
+    flex: 1;
+    /*伸缩比，等于1填充剩下的所有区域*/
+    display: flex;
+    flex-direction: column;
+    /*竖向排列*/
+}
+
+.right-user {
+    font-weight: 500;
+    font-size: 20px;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.msg-wrap {
+    overflow: auto;
+    /*当元素高度高于视口高度时才会出现滚动条*/
+    flex: 1;
+    background-color: #faf9f9;
+}
+
+.msg-wrap::-webkit-scrollbar {
+    display: none;
+}
+
+.msg-wrap-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.msg-list {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.msg-list img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.firends-name {
+    margin-left: 15px;
+    margin-bottom: 5px;
+    color: gray;
+    font-weight: 300;
+}
+
+.other-context {
+    background-color: white;
+    /* height: 40px; */
+    line-height: 40px;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.msg-list-right {
+    flex-direction: row-reverse;
+}
+
+.my-name {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    color: gray;
+    font-weight: 300;
+}
+
+.my-context {
+    background-color: #007acc;
+    flex-direction: row-reverse;
+    line-height: 40px;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 5px;
+    color: white;
+    margin-right: 10px;
+}
+
+.history-msg {
+    text-align: center;
+    font-size: 10px;
+    color: #007acc;
+}
+
+.input-wrap {
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.input {
+    flex: 1;
+    height: 1.5rem;
+    border: 1px solid #cccccc;
+}
+
+button {
+    background-color: #007acc;
+    width: 50px;
+    height: 1.5rem;
+    border: none;
+    color: white;
+    margin-left: 10px;
+}
+
+.right-user {
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+.chartShow {
+    animation: appearAnimation 1.5s forwards;
+}
+
+@keyframes appearAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
